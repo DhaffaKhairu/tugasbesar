@@ -1,0 +1,524 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="img/w3.css">
+
+<div class  ="w3-container w3-black">
+	<center>
+	<img src='img/court.png' style="width:100%"> 	
+</div>
+
+<style>
+.p1 {
+  font-family: "Copperplate", Fantasy;
+}
+
+.p3 {
+  font-family: "Helvetica", Sans-serif;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<div class="w3-bar w3-red w3-card-4">
+	<button class="w3-bar-item w3-button" onclick="rank('home')"><p class="p1">HOME</p></button>
+	<button class="w3-bar-item w3-button" onclick="rank('md')"><p class="p1">MEN'S DOUBLE</p></button>
+	<button class="w3-bar-item w3-button" onclick="rank('wd')"><p class="p1">WOMEN'S DOUBLE</p></button>
+	<button class="w3-bar-item w3-button" onclick="rank('ms')"><p class="p1">MEN'S SINGLE</p></button>
+	<button class="w3-bar-item w3-button" onclick="rank('ws')"><p class="p1">WOMEN'S SINGLE</p></button>
+	<button class="w3-bar-item w3-button" onclick="rank('xd')"><p class="p1">MIXED DOUBLE</p></button>
+	
+	<div class="w3-dropdown-hover">
+		<button class="w3-button"><p class="p1">PLAYER</p></button>
+		<div button class="w3-dropdown-content w3-bar-block w3-card-4">
+			<button class="w3-bar-item w3-button" onclick="rank('1')">Victor Axelsen</button>
+			<button class="w3-bar-item w3-button" onclick="rank('2')">Anthony Sinisuka Ginting</button>
+			<button class="w3-bar-item w3-button" onclick="rank('3')">Kento Momota</button>
+			<button class="w3-bar-item w3-button" onclick="rank('4')">Kevin Sanjaya</button>
+		</div>
+	</div>
+	
+	<div id="home" class="part w3-animate-opacity">
+		<img src='img/hsbc.jpg' width='100%'>
+	</div>
+</div>
+
+<div id="md" class="w3-container part w3-animate-bottom" style="display:none">
+	<center>
+	<br>
+	<div class="w3-bar w3-black w3-card-4">
+		<h1><p class="p1">LEADER BOARD</p>
+	</div>
+	<table width=100% cellpadding="5">
+	<th colspan='4'><h1><p class="p1">MEN'S DOUBLE</p></th> 
+
+	<tr align=center>
+		<th><p class="p3">RANK</p></th>
+		<th><p class="p3">NAME</p></th>
+		<th><p class="p3">NATION</p></th>
+		<th><p class="p3">POINTS</p></th>
+	</tr>
+
+	<tr align=center>
+		<td >1</td>
+		<td>Chirag SHETTY<p>Satwiksairaj RANKIREDDY</td>
+		<td><img src='img/india.jpg' style="width:10%"></td>
+		<td>95,861</td>
+	</tr>
+	
+		<tr align=center>
+		<td>2</td>
+		<td>LIANG Wei Keng<p> WANG Chang</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>95,391</td>
+	</tr>
+	
+	<tr align=center>
+		<td>3</td>
+		<td>KANG Min Hyuk<p>SEO Seung Jae</td>
+		<td><img src='img/korea.jpg' style="width:10%"></td>
+		<td>92,505</td>
+	</tr>
+	
+	<tr align=center>
+		<td>4</td>
+		<td>Kim ASTRUP<p>Anders Skaarup RASMUSSEN</td>
+		<td><img src='img/denmark.jpg' style="width:10%"></td>
+		<td>87,359</td>
+	</tr>
+	
+	<tr align=center>
+		<td>5</td>
+		<td>Aaron CHIA<p>SOH Woo Yik</td>
+		<td><img src='img/malaysia.jpg' style="width:10%"></td>
+		<td>87,064</td>
+	</tr>
+
+	<tr align=center>
+		<td>6</td>
+		<td>Takuro HOKI<p>Yugo KOBAYASHI</td>
+		<td><img src='img/japan.jpg' style="width:10%"></td>
+		<td>83,581</td>
+	</tr>
+
+	<tr align=center>
+		<td>7</td>
+		<td>Fajar ALFIAN<p>Muhammad Rian ARDIANTO</td>
+		<td><img src='img/indo.jpg' style="width:10%"></td>
+		<td>80,329</td>
+	</tr>
+	
+	<tr align=center>
+		<td>8</td>
+		<td>LIU Yu Chen<p>OU Xuan Yi</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>74,638</td>
+	</tr>
+	
+	<tr align=center>
+		<td>9</td>
+		<td>Muhammad Shohibul FIKRI<p>Bagas MAULANA</td>
+		<td><img src='img/indo.jpg' style="width:10%"></td>
+		<td>71,090</td>
+	</tr>
+	
+	<tr align=center>
+		<td>10</td>
+		<td>LEE Yang<p>WANG Chi-Lin</td>
+		<td><img src='img/taipei.jpg' style="width:10%"></td>
+		<td>70,998</td>
+	</tr>
+</table>
+<br>
+</div>
+
+
+<div id="wd" class="w3-container part w3-animate-bottom" style="display:none">
+	<center>
+	<br>
+	<div class="w3-bar w3-black w3-card-4">
+		<h1><p class="p1">LEADER BOARD</p>
+	</div>
+	<table width=100% cellpadding="5">
+	<th colspan='4'><h1><p class="p1">WOMEN'S DOUBLE</p></th> 
+
+	<tr align=center>
+		<th><p class="p3">RANK</p></th>
+		<th><p class="p3">NAME</p></th>
+		<th><p class="p3">NATION</p></th>
+		<th><p class="p3">POINTS</p></th>
+	</tr>
+
+	<tr align=center>
+		<td >1</td>
+		<td>CHEN Qing Chen<p>JIA Yi Fan</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>108,654</td>
+	</tr>
+	
+	<tr align=center>
+		<td>2</td>
+		<td>BAEK Ha Na<p>LEE So Hee</td>
+		<td><img src='img/korea.jpg' style="width:10%"></td>
+		<td>98,550</td>
+	</tr>
+	
+	<tr align=center>
+		<td>3</td>
+		<td>KIM So Yeong<p>KONG Hee Yong</td>
+		<td><img src='img/korea.jpg' style="width:10%"></td>
+		<td>88,475</td>
+	</tr>
+	
+	<tr align=center>
+		<td>4</td>
+		<td>Yuki FUKUSHIMA<p>Sayaka HIROTA</td>
+		<td><img src='img/japan.jpg' style="width:10%"></td>
+		<td>83,105</td>
+	</tr>
+	
+	<tr align=center>
+		<td>5</td>
+		<td>LIU Sheng Shu<p>TAN Ning</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>82,750</td>
+	</tr>
+
+	<tr align=center>
+		<td>6</td>
+		<td>ZHANG Shu Xian<p>ZHENG Yu</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>81,993</td>
+	</tr>
+
+	<tr align=center>
+		<td>7</td>
+		<td>Nami MATSUYAMA<p>Chiharu SHIDA</td>
+		<td><img src='img/japan.jpg' style="width:10%"></td>
+		<td>81,745</td>
+	</tr>
+	
+	<tr align=center>
+		<td>8</td>
+		<td>Mayu MATSUMOTO<p>Wakana NAGAHARA</td>
+		<td><img src='img/japan.jpg' style="width:10%"></td>
+		<td>79,883</td>
+	</tr>
+	
+	<tr align=center>
+		<td>9</td>
+		<td>Apriyani RAHAYU<p>Siti Fadia Silva RAMADHANTI</td>
+		<td><img src='img/indo.jpg' style="width:10%"></td>
+		<td>74,993</td>
+	</tr>
+	
+	<tr align=center>
+		<td>10</td>
+		<td>Jongkolphan KITITHARAKUL<p>Rawinda PRAJONGJAI</td>
+		<td><img src='img/thai.jpg' style="width:10%"></td>
+		<td>72,273</td>
+	</tr>
+</table>
+<br>
+</div>
+
+<div id="ms" class="w3-container part w3-animate-bottom" style="display:none">
+	<center>
+	<br>
+	<div class="w3-bar w3-black w3-card-4">
+		<h1><p class="p1">LEADER BOARD</p>
+	</div>
+	<table width=100% cellpadding="5">
+	<th colspan='4'><h1><p class="p1">MEN'S SINGLE</p></th> 
+
+	<tr align=center>
+		<th><p class="p3">RANK</p></th>
+		<th><p class="p3">NAME</p></th>
+		<th><p class="p3">NATION</p></th>
+		<th><p class="p3">POINTS</p></th>
+	</tr>
+
+	<tr align=center>
+		<td >1</td>
+		<td>Viktor AXELSEN</td>
+		<td><img src='img/denmark.jpg' style="width:10%"></td>
+		<td>97,605</td>
+	</tr>
+	
+	<tr align=center>
+		<td>2</td>
+		<td>SHI Yu Qi</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>90,184</td>
+	</tr>
+	
+	<tr align=center>
+		<td>3</td>
+		<td> LI Shi Feng</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>83,948</td>
+	</tr>
+	
+	<tr align=center>
+		<td>4</td>
+		<td>Anthony Sinisuka GINTING</td>
+		<td><img src='img/indo.jpg' style="width:10%"></td>
+		<td>81,131</td>
+	</tr>
+	
+	<tr align=center>
+		<td>5</td>
+		<td>Kodai NARAOKA</td>
+		<td><img src='img/japan.jpg' style="width:10%"></td>
+		<td>81,015</td>
+	</tr>
+
+	<tr align=center>
+		<td>6</td>
+		<td>Jonatan CHRISTIE</td>
+		<td><img src='img/indo.jpg' style="width:10%"></td>
+		<td>78,731</td>
+	</tr>
+
+	<tr align=center>
+		<td>7</td>
+		<td>Anders ANTONSEN</td>
+		<td><img src='img/denmark.jpg' style="width:10%"></td>
+		<td>78,130</td>
+	</tr>
+	
+	<tr align=center>
+		<td>8</td>
+		<td>PRANNOY H. S.</td>
+		<td><img src='img/india.jpg' style="width:10%"></td>
+		<td>76,587</td>
+	</tr>
+	
+	<tr align=center>
+		<td>9</td>
+		<td>Kunlavut VITIDSARN</td>
+		<td><img src='img/thai.jpg' style="width:10%"></td>
+		<td>71,778</td>
+	</tr>
+	
+	<tr align=center>
+		<td>10</td>
+		<td>LEE Zii Jia</td>
+		<td><img src='img/malaysia.jpg' style="width:10%"></td>
+		<td>69,956</td>
+	</tr>
+</table>
+<br>
+</div>
+
+<div id="ws" class="w3-container part w3-animate-bottom" style="display:none">
+	<center>
+	<br>
+	<div class="w3-bar w3-black w3-card-4">
+		<h1><p class="p1">LEADER BOARD</p>
+	</div>
+	<table width=100% cellpadding="5">
+	<th colspan='4'><h1><p class="p1">WOMEN'S SINGLE</p></th> 
+
+	<tr align=center>
+		<th><p class="p3">RANK</p></th>
+		<th><p class="p3">NAME</p></th>
+		<th><p class="p3">NATION</p></th>
+		<th><p class="p3">POINTS</p></th>
+	</tr>
+
+	<tr align=center>
+		<td >1</td>
+		<td>AN Se Young</td>
+		<td><img src='img/korea.jpg' style="width:10%"></td>
+		<td>113,314</td>
+	</tr>
+	
+	<tr align=center>
+		<td>2</td>
+		<td>CHEN Yu Fei</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>102,596</td>
+	</tr>
+	
+	<tr align=center>
+		<td>3</td>
+		<td>TAI Tzu Yingg</td>
+		<td><img src='img/taipei.jpg' style="width:10%"></td>
+		<td>97,036</td>
+	</tr>
+	
+	<tr align=center>
+		<td>4</td>
+		<td>Akane YAMAGUCHI</td>
+		<td><img src='img/japan.jpg' style="width:10%"></td>
+		<td>91,167</td>
+	</tr>
+	
+	<tr align=center>
+		<td>5</td>
+		<td>Carolina MARIN</td>
+		<td><img src='img/spain.jpg' style="width:10%"></td>
+		<td>86,337</td>
+	</tr>
+
+	<tr align=center>
+		<td>6</td>
+		<td>HE Bing Jiao</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>74,474</td>
+	</tr>
+
+	<tr align=center>
+		<td>7</td>
+		<td>Gregoria Mariska TUNJUNG</td>
+		<td><img src='img/indo.jpg' style="width:10%"></td>
+		<td>72,800</td>
+	</tr>
+	
+	<tr align=center>
+		<td>8</td>
+		<td>HAN Yue</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>72,008</td>
+	</tr>
+	
+	<tr align=center>
+		<td>9</td>
+		<td>Beiwen ZHANG</td>
+		<td><img src='img/usa.jpg' style="width:10%"></td>
+		<td>66,540</td>
+	</tr>
+	
+	<tr align=center>
+		<td>10</td>
+		<td>WANG Zhi Yi</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>66,150</td>
+	</tr>
+</table>
+<br>	
+</div>
+
+<div id="xd" class="w3-container part w3-animate-bottom" style="display:none">
+	<center>
+	<br>
+	<div class="w3-bar w3-black w3-card-4">
+		<h1><p class="p1">LEADER BOARD</p>
+	</div>
+	<table width=100% cellpadding="5">
+	<th colspan='4'><h1><p class="p1">MIXED DOUBLES</p></th> 
+
+	<tr align=center>
+		<th><p class="p3">RANK</p></th>
+		<th><p class="p3">NAME</p></th>
+		<th><p class="p3">NATION</p></th>
+		<th><p class="p3">POINTS</p></th>
+	</tr>
+
+	<tr align=center>
+		<td >1</td>
+		<td>ZHENG Si Wei<p>HUANG Ya Qiong</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>111,456</td>
+	</tr>
+	
+		<tr align=center>
+		<td>2</td>
+		<td>Yuta WATANABE<p>Arisa HIGASHINO</td>
+		<td><img src='img/japan.jpg' style="width:10%"></td>
+		<td>93,995</td>
+	</tr>
+	
+	<tr align=center>
+		<td>3</td>
+		<td>SEO Seung Jae<p>CHAE Yu Jung</td>
+		<td><img src='img/korea.jpg' style="width:10%"></td>
+		<td>90,406</td>
+	</tr>
+	
+	<tr align=center>
+		<td>4</td>
+		<td>FENG Yan Zhe<p>HUANG Dong Ping</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>90,400</td>
+	</tr>
+	
+	<tr align=center>
+		<td>5</td>
+		<td>JIANG Zhen Bang<p>WEI Ya Xin</td>
+		<td><img src='img/china.jpg' style="width:10%"></td>
+		<td>86,400</td>
+	</tr>
+
+	<tr align=center>
+		<td>6</td>
+		<td>Dechapol PUAVARANUKROH<p>Sapsiree TAERATTANACHAI</td>
+		<td><img src='img/thai.jpg' style="width:10%"></td>
+		<td>80,534</td>
+	</tr>
+
+	<tr align=center>
+		<td>7</td>
+		<td>KIM Won Ho<p>JEONG Na Eun</td>
+		<td><img src='img/korea.jpg' style="width:10%"></td>
+		<td>78,067</td>
+	</tr>
+	
+	<tr align=center>
+		<td>8</td>
+		<td>TANG Chun Man<p>TSE Ying Suet</td>
+		<td><img src='img/hong.jpg' style="width:10%"></td>
+		<td>69,230</td>
+	</tr>
+	
+	<tr align=center>
+		<td>9</td>
+		<td>CHEN Tang Jie<p>TOH Ee Wei</td>
+		<td><img src='img/malaysia.jpg' style="width:10%"></td>
+		<td>67,578</td>
+	</tr>
+	
+	<tr align=center>
+		<td>10</td>
+		<td>Mathias CHRISTIANSEN<p>Alexandra BØJE</td>
+		<td><img src='img/denmark.jpg' style="width:10%"></td>
+		<td>66,228</td>
+	</tr>
+</table>
+<br>	
+</div>
+
+
+
+<div id="1" class="part w3-animate-opacity" style="display:none">
+	<center>
+	<img src='img/1v.jpg' style="width:100%">
+</div>
+
+<div id="2" class="part w3-animate-opacity" style="display:none">
+	<center>
+	<img src='img/2g.jpg' style="width:100%">
+</div>
+
+<div id="3" class="part w3-animate-opacity" style="display:none">
+	<center>
+	<img src='img/3m.jpg' style="width:100%">
+</div>
+
+<div id="4" class="part w3-animate-opacity" style="display:none">
+	<center>
+	<img src='img/4k.jpg' style="width:100%">
+</div>
+
+<script>
+function rank (part) {
+	var i;
+	var x = document.getElementsByClassName("part");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	document.getElementById(part).style.display = "block";
+}
+</script>
